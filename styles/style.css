@@ -47,7 +47,7 @@ ol {
 
 .result__video-container {
  margin-bottom: 16px;
-
+ position: relative;
 }
 
 .result__video {
@@ -67,6 +67,7 @@ ol {
 .content__list {
  max-height: 298px;
   overflow: auto;
+  position: relative;
 }
 
 .content__list-item:not(:nth-child(5)) {
