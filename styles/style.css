@@ -45,6 +45,19 @@ ol {
   gap: 30px;
 }
 
+.result__video-container {
+ margin-bottom: 16px;
+
+}
+
+.result__video {
+  width: 711px;
+ height: 386px; 
+ object-fit: cover;
+ object-position: center;
+
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -56,7 +69,27 @@ ol {
   overflow: auto;
 }
 
+.content__list-item:not(:nth-child(5)) {
+  margin-bottom: 30px;
+}
+
 .content__details {
   flex-grow: 1;
   align-self: stretch;
+}
+
+.content__video-card {
+display: flex;
+align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+height: 103px;
+object-fit: cover;
+object-position: center;
+}
+
+.content__video-card-description-container{
+  flex-grow: 1;
 }
