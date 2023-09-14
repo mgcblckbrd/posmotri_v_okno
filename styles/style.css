@@ -93,6 +93,7 @@ ol {
 }
 
 .search-form__textfield {
+  color: #fff;
   appearance: none;
   font-size: inherit;
   background-color: transparent;
@@ -148,7 +149,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed, "Arial", sans-serif;
+  font-family: "Fira Sans Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -186,9 +187,14 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   align-self: flex-end;
 }
 
+.more-button {
+  display: block;
+  inline-size: 100%;
+}
+
 .title {
   color: #fff;
-  font-family: Oswald, "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -208,7 +214,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   position: relative;
 }
 
-.content__list-item:not(:nth-child(5)) {
+.content__list-item:not(:last-of-type) {
   margin-bottom: 36px;
 }
 
