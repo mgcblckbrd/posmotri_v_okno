@@ -38,7 +38,8 @@ ol {
 }
 
 .content {
-  margin: 129px auto;
+  margin-top: 129px;
+  margin-left: 15px;
   display: flex;
   align-items: flex-end;
   height: 534px;
@@ -96,6 +97,7 @@ ol {
   color: #fff;
   appearance: none;
   font-size: inherit;
+  font-family: inherit;
   background-color: transparent;
   border: none;
   border-top: 1px solid #fff;
@@ -109,12 +111,13 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .button:active,
-.content__list-item:active {
+.content__list-item:active,
+.content__card-link_current {
   background: #545050;
 }
 
 .button:focus,
-.content__card-link:focus,
+.content__list-item:focus,
 .search-form__label:focus,
 .search-form__textfield:focus {
   outline: none;
@@ -127,7 +130,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .button:focus-visible,
-.content__card-link:focus-visible,
+.content__list-item:focus-visible,
 .search-form__label:has(:focus-visible) .search-form__textfield:not(:active),
 .search-form__checkbox-list .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
@@ -175,6 +178,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   cursor: pointer;
   border: 1px solid #fff;
   color: #fff;
+  font-family: "Fira Sans Condensed", "Arial", sans-serif;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -246,8 +250,12 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .content__video-card-title {
-  text-transform: uppercase;
+  color: #fff;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
