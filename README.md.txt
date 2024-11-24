@@ -1,1 +1,0 @@
-https://github.com/mgcblckbrd/posmotri_v_okno
