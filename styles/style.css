@@ -103,7 +103,7 @@ ol {
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
-  border: 3px double #545050;
+  border: 1px solid #545050;
   background-color: #fff;
 }
 
