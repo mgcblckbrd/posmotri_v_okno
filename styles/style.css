@@ -6,8 +6,6 @@
 
 html {
   block-size: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .page {
@@ -16,6 +14,9 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -103,14 +104,13 @@ ol {
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
-  border: 1px solid #545050;
+  border: 1px solid transparent;
   background-color: #fff;
 }
 
 .button:active,
-.content__list-item:active,
-.content__card-link_current {
-  background: #545050;
+.content__list-item:active {
+  background-color: #545050;
 }
 
 .button:focus,
@@ -118,6 +118,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .content__list-item:focus,
 .search-form__textfield:focus {
   outline: none;
+ 
 }
 
 .button:hover,
@@ -125,11 +126,11 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .search-form__checkbox-list .search-form__label:hover {
   text-decoration: underline;
 }
+/* .search-form__textfield:not(:active)  сохраний на всякий случай из правила ниже*/
 
 .button:focus-visible,
 .content__list-item:focus-visible,
-.search-form__label:has(:focus-visible),
-.search-form__textfield:not(:active) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
